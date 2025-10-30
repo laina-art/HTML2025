@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        float: left :왼쪽정렬
+        float: right :오른쪽 정렬
+        margin: 0 auto :가로 중앙정렬
+
+        코드에서 float : left 하고 margin 0 auto는 같이 사용할수 없음
+        같이 사용하면 틀어지는 문제가 발생한다.
+        clear: both; 를 사용하면 떠 있는 요소를 아래로 내려가게하므로
+        중앙정렬(margin: 0 auto;)정상작동함.
+        즉, clear: both;는 float속성 해제 역할을 한다.
+        */
+
+        *{
+            margin:0; box-sizing: border-box;
+        #wrap{
+            width: 600px; height: auto; border: 3px solid blue;
+            margin: 0 auto;
+
+        }
+        header{
+            width:500px; height:100px;
+            border:3px solid gold; 
+        }
+        #slider{
+            width:500px; height:100px;
+            border:3px solid yellowgreen; 
+        }
+        main{
+            width:500px; height:100px;
+            border:3px solid green; 
+        }
+        footer{
+            width:500px; height:100px;
+            border:3px solid teal; 
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header></header>
+        <div id = "slider"></div>
+        <main></main>
+        <footer></footer>
+        </div>
+</body>
+</html>

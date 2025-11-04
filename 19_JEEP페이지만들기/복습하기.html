@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JEEP 홈페이지</title>
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "맑은고딕 ";
+        }
+
+        ul, ol, li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            /*기본들여쓰기 제거용*/
+        }
+
+        header {
+            width: 1185px;
+            height: 160px;
+            margin: 0 auto;         
+        }
+        #logo {
+            width:170px; height:70px; float: left;
+            margin: 50px 0 0 10px;
+        }
+        #logo img{
+            width:100%; height:100%;
+        }
+        #login{
+            width: 295px; height: 30px; float: right;
+            margin: 20px 0 0 0;
+        }
+        #login ul {
+            font-size: 12px; color: black;
+        }
+        #login li {
+            float: left; margin: 0 5px;
+        }
+        #login li a{
+            text-decoration: none; color:#666;
+        }
+        nav{
+            width: 780px; height: 40px;
+            float: right; margin: 40px 0 0 0;    
+        }
+        nav ul{
+            font-size: 19px; font-weight: bold;
+            float: right;
+        }
+        nav ul li{
+            float: left; margin: 0 5px;
+        }
+        nav ul li a{
+            text-decoration: none; color:#000;
+        }
+        nav ul li a:hover{
+            color: blue;
+        }
+        #slider {
+            width: 1475px;
+            height: 560px;
+            background-color: tomato;
+            margin: 0 auto;
+        }
+        #slider img {
+            width: 100%;
+            height:100%;
+        }
+        section {
+            width: 1280px;
+            height: 405px;
+            border: 3px;
+            background-color: skyblue;
+            margin: 0 auto; 
+        }
+        #news {
+            width: 345px; height: 155px;
+            float: left; margin: 30px 0 0 35px;
+            background-color: aliceblue;
+        }
+        #icon {
+            width: 455px; height: 155px;
+            float: left; margin: 30px 0 0 35px;
+            background-color: #111;
+        }
+        #icon .iconbox{
+            width: 75px; height: 75px;
+            float: left; background-color: #aaa;
+            margin: 30px 12px 0 0; 
+        }
+        #brand {
+            width: 330px; height: 155px;
+            float: left; margin: 30px 0 0 35px;
+            background-color: #ab3c;
+        }
+        #promotion {
+            width: 345px; height: 150px;
+            float: left; margin: 30px 0 0 35px;
+            background-color: #34ac;
+            }
+        #camp {
+            width: 455px; height: 150px;
+            float: left; margin: 30px 0 0 35px;
+            background-color: #f7f7;
+        }
+        #store {
+            width: 330px; height: 150px;
+            float: left; margin: 30px 0 0 35px;
+            background-color: #14b4;
+        }
+        footer {
+            width: 100%;  height: 145px;
+            border-top: 1px solid #666;
+            margin: 0 auto;
+        }
+        footer #box{
+            width: 1240px; height: 130px;
+            margin: 10px auto;
+        }
+        footer #box ul{
+            width: 750px; height: 50px; float: left;
+            margin: 20px 0 0 40px; color: #666;
+        }
+        footer #box ul li{
+            float:left; font-size: 12px; margin: 5px 10px;
+        }
+        footer #box ul li a {
+            text-decoration: none; color:#666
+        }
+        footer #box p {
+            float:left; width: 700px; height:50px; line-height: 150%;
+            margin: 10px 0 0 40px; font-size: 12px; color:#666
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/logo_img.jpg" alt="로고"> 
+        </div>
+        <div id="login">
+            <ul>
+                <li><a href = "#">로그인</a></li>
+                <li>|</li>
+                <li><a href = "#">회원가입</a></li>
+                <li>|</li>
+                <li><a href = "#">Q & A</a></li>
+                <li>|</li>
+                <li><a href = "#">LANGUAGE</a></li>          
+            </ul>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">| Model</a></li>
+                <li><a href="#">| Driving</a> </li>
+                <li><a href="#">| Performance</a></li>
+                <li><a href="#">| Services</a></li>
+                <li><a href="#">| Event |</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+        <div id="slider">
+            <img src="img/1.jpg" alt="슬라이더 이미지">
+        </div>
+
+    <section>
+        <div id="news"></div>
+
+        <div id="icon">
+            <div class="iconbox"></div>
+            
+            <div class="iconbox"></div>
+            
+            <div class="iconbox"></div>
+            
+            <div class="iconbox"></div>
+            
+            <div class="iconbox"></div>
+
+        </div>
+
+        <div id="brand"></div>
+
+        <div id="promotion"></div>
+
+        <div id="camp"></div>
+
+        <div id="store"></div>
+    </section>
+
+    <footer>
+        <div id="box">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li>|</li>
+                <li><a href="#">BUSSINESS PRACTICE OFFICE</a></li>
+                <li>|</li>
+                <li><a href="#">COPYRIGHT</a></li>
+                <li>|</li>
+                <li><a href="#">CONTACT US</a></li>
+                <li>|</li>
+                <li><a href="#">SITEMAP</a></li>
+                <li>|</li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li>|</li>
+                <li><a href="#"><CONTACT href="#">fiat Chrysler Automobiles (FCA)</a></li>
+                <li>|</li>
+                <li><a href="#">Chrysler</a></li>
+                <li>|</li>
+                <li><a href="#">FLAT</a></li>
+                <li>|</li>
+            </ul>
+            <P>ⓒ 2016 Fiat Chrysler Automobiles (FCA). All Rights Reserved.<br>
+            Chrysler, Jeep 및 FIAT 로고는 Fiat Chrysler Automobiles (FCA)의 등록 상표입니다.</P>
+        </div>
+    </footer>
+
+</body>
+
+</html>

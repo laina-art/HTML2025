@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>Flower garden</title>
+    
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "맑은 고딕";
+        }
+
+        ul, ol, li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            width:100%; height:250px; margin:0 auto;
+            background-color: white;
+        }
+        #logo{
+            width:400px; height:130px; float: left;
+            margin: 30px 0 0px 150px;
+            }
+        #logo img{
+            width: 100%; height: 150%;
+            
+        }
+        #login{
+            width:920px; height:70px; float: right;
+            margin: 20px 100px 0 0;
+        }
+        #login ul {
+            font-size: 15px; color:black;
+            float: right; margin: 0 0 0 5px; display: flex;
+        }
+        #login ul li {
+            font-size: 20px; color:black;
+            float: right; margin: 0 0 0 5px;
+        }
+        nav{
+            width:100%; height:0px; float: right;
+            margin: 0px 90px 0 0; 
+        }
+        nav ul {
+            font-size: 30px; color:black;
+            text-decoration: none; 
+            float:right;
+        }
+        nav ul li{
+            float: left; margin:0 0 30px 20px;
+        }
+        nav ul li a{
+            text-decoration: none; color: black;
+        }
+        nav ul li a:hover{
+            color: green;
+        }
+        @media (max-width: 1000px) {
+        nav {
+        
+        align-items: flex-start;
+    }
+        .menu {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        }
+    }
+        #slider {
+            width: 100%;
+            height: 560px;
+            background-color:pink;
+            margin: 0 auto;
+        }
+        #slider img {
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+        }
+        section{
+            width:100%; height:500px;
+            background-color: antiquewhite;
+            margin:0 auto; align-items: center;
+        }
+        footer {
+            width: 100%;  height: 145px;
+            border-top: 1px solid #666;
+            margin: 0 auto;
+            background-color: #666;
+        }
+        footer #box{
+            width: 2040px; height: 130px;
+            margin: 10px auto;
+        }
+        footer #box ul{
+            width: 100%; height: 30px; float: left;
+            margin: 0px 0 0 40px; color: #e7e5e5;
+        }
+        footer #box ul li{
+            float:left; font-size: 15px; margin: 5px 10px;
+        }
+        footer #box ul li a {
+            text-decoration: none; color:#e7e5e5;
+        }
+        footer #box p {
+            float:left; width: 700px; height:50px; line-height: 150%;
+            margin: 5px 0 0 350px; font-size: 12px; color: white;
+        }
+        footer #logo{
+            width: 150px; height: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id = "logo">
+            <img src = "img/logo.png" alt="로고">
+        </div>
+            <div id = "login">
+            <ul>
+                <li>로그인</li>
+                <li>.</li>
+                <li>회원가입</li>
+                <li>.</li>
+                <li>Q&A</li>
+                <li>.</li>
+                <li>language</li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li>|</li>
+                <li><a href="#">About us</a></li>
+                <li>|</li>
+                <li><a href="#">The language of flowers</a></li>
+                <li>|</li>
+                <li><a href="#">Order</a></li>
+                <li>|</li>
+                <li><a href="#">Work</a></li>
+                <li>|</li>
+                <li><a href="#">Location</a></li>
+                <li>|</li>
+            </ul>
+        </nav>
+    </header>
+    <div id = "slider">
+        <img src="img/storemain1.jpg" alt="슬라이더 이미지1">
+    </div>
+    <section>
+        <div id="NEWS"></div>
+        <div id="CustomerReview"></div>
+        <div id="monthlyflower"></div>
+        </section>
+    <footer>
+        <div id = "logo">
+            <img src = "img/logo.png" alt="로고">
+        </div>
+        <div id="box">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li>|</li>
+                <li><a href="#">BUSSINESS PRACTICE OFFICE</a></li>
+                <li>|</li>
+                <li><a href="#">COPYRIGHT</a></li>
+                <li>|</li>
+                <li><a href="#">CONTACT US</a></li>
+                <li>|</li>
+                <li><a href="#">SITEMAP</a></li>
+                <li>|</li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li>|</li>
+                <li><a href="#"><CONTACT href="#">fiat Chrysler Automobiles (FCA)</a></li>
+                <li>|</li>
+                <li><a href="#">Chrysler</a></li>
+                <li>|</li>
+                <li><a href="#">FLAT</a></li>
+                <li>|</li>
+            </ul>
+            <P>ⓒFLOWERGARDEN. All Rights Reserved.<br>
+            Chrysler, Jeep 및 FIAT 로고는 Fiat Chrysler Automobiles (FCA)의 등록 상표입니다.</P>
+        </div>
+    </footer>
+</body>
+</html>

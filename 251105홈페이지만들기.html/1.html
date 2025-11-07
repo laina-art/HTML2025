@@ -18,27 +18,32 @@
             margin: 0;
             padding: 0;
         }
-        body{
-            background-color: rgb(219, 215, 215);
+
+        body {
+            background-color: white;
         }
 
         header {
+            position: fixed;
+            /* 화면 상단에 고정 */
+            top: 0;
+            left: 0;
             width: 100%;
             height: 250px;
-            margin: 0 auto;
             background-color: white;
+            z-index: 1000;
         }
 
         #logo {
             width: 400px;
             height: 130px;
             float: left;
-            margin: 30px 0 0px 150px;
+            margin: 40px 0 0px 150px;
         }
 
         #logo img {
             width: 100%;
-            height: 150%;
+            height: 180px;
 
         }
 
@@ -46,57 +51,72 @@
             width: 920px;
             height: 70px;
             float: right;
-            margin: 20px 100px 0 0;
+            margin: 50px 50px 0 0;
         }
 
         #login ul {
             font-size: 15px;
             color: black;
-            text-decoration: none;
             float: right;
             display: flex;
         }
 
         #login ul li {
-            font-size: 20px;
+            font-size: 15px;
             color: black;
             float: left;
             margin: 0 5px 0 0;
+            text-decoration: none;
         }
 
         nav {
             width: 100%;
             float: right;
-            margin: 0px 90px 0 0;
+            margin: 0px;
         }
 
-        nav ul {
-            font-size: 30px;
+        @media (max-width: 700px) {
+            .menu-toggle {
+                display: block;
+                background-color: lightgray;
+                padding: 10px;
+                text-align: center;
+            }
+
+            .menu-toggle a {
+                text-decoration: none;
+                display: none;
+                color: blue;
+            }
+        }
+
+        nav div {
+            font-size: 35px;
             color: green;
-            text-decoration: none;
             float: right;
+            margin-right: 50px;
+            display: flex;
+            list-style: none;
+            gap: 20px;
         }
 
-        nav ul li {
-            float: left;
-            margin: 0 0 30px 20px;
-        }
-
-        nav ul li a {
+        nav div a {
             text-decoration: none;
-            color: black;
+            color: #333;
+            float: left;
+            margin: 0 0 0px 20px;
         }
 
-        nav ul li a:hover {
+        nav div a:hover {
             font-weight: bold;
             color: green;
         }
-        
+
         #slider {
             width: 100%;
             height: 1000px;
             background-color: pink;
-            margin: 0 auto;
+            margin-top: 250px;
         }
 
         #slider img {
@@ -104,114 +124,137 @@
             height: 100%;
             object-fit: cover;
         }
+
         section {
             width: 100%;
-            height: 1500px;
+            height: 1200px;
             background-color: ivory;
-            margin : 0 auto;
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 80px;
             padding: 100px 0;
         }
+
+        button {
+            background-color: rgba(52, 152, 219, 0.8);
+            /* 반투명 파란색 */
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            /* 그림자 */
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            width: 1200px;
+            height: 400px;
+            font-size: 35px;
+            background-color: green;
+            color: white;
+            margin: 0px 0 0 68px;
+        }
+
         article {
             width: 90%;
             height: 500px;
             color: white;
             border-radius: 15px;
             display: flex;
-            flex-direction:row;
+            flex-direction: row;
             justify-content: center;
             text-align: center;
-            }
-        article h2{
-            font-size: 100px;
-            color:darkolivegreen;
-            text-align:left; 
-            margin:20px 50px 0 10px ;
-        } 
-        article h3{
+        }
+
+        article h2 {
+            font-size: 80px;
+            color: darkolivegreen;
+            text-align: left;
+            margin: 80px 10px 0 70px;
+            margin-bottom: 20px;
+        }
+
+        article #tuliptext p {
             font-size: 20px;
-            color:black;
-            margin: 0px auto;
-            margin: 0 auto 10px;
-            text-align: center;
-        }    
-        article p{
-            font-size: 20px;
-            max-width:70%;
-            margin: 50px 20px 0px 10px;
+            max-width: 100%;
+            margin: 50px 0px 0px 50px;
             color: #333;
             text-align: left;
-            margin-bottom: 0%;
+            line-height: 1.8;
+
         }
-        article button{
-            width:500px; height: 900px;
-            font-size: 35px;
-            background-color: yellowgreen;
-            border: none;
-            margin: 0 0 0 68px; 
+
+        article h2,
+        #tuliptext p {
+            margin: 0px 50px 20px 0px;
+            display: left;
         }
-        article button:hover{
-            width:500px; height: 900px;
-            font-size: 35px;
-            background-color:green; color:white;
-            margin: 0 0 0 68px;
-        }
-        article img{
-            width:500px; height: 900px;
+
+        .overlay-box img {
+            margin: 0;
+            width: 320px;
+            height: 900px;
             background-color: white;
-            float: right; margin: 0px 0 0 68px;
+            line-height: 1.5;
+            op
+        }
+
+        article #tulipimage img {
+            width: 320px;
+            height: 900px;
+            background-color: white;
+            float: right;
+            margin: 0px 20px 0px 30px;
             object-fit: cover;
         }
-       
-        footer {
+
+        footer{
+            /* footer전체 칸*/
             width: 100%;
-            height: 400px;
+            height: 300px;
             margin: 0 auto;
             background-color: rgb(221, 221, 218);
         }
 
-        footer #box {
-            width: 2040px;
-            height: 130px;
-            margin: 0 auto;
+        footer #logo {
+            width: 350px;
+            height: 30px;
+            margin: 60px 0 70px 170px;
         }
 
-        footer ul {
-            color: black;
-            /*width: 100%; height: 30px; float: left;*/
+        footer ul{
+            margin: 0px 0px 0px 0px;
+            text-decoration: none;
+            display: flex;;
         }
-
-        footer #box ul li {
-            float: left;
-            font-size: 20px;
-            margin: 25px 0px 3px 30px;
-        }
-        footer #box ul li a {
+        footer ul li{
+            margin: 140px 20px 0px 100px;
+            }
+        footer ul li a{
+            font-size: 30px;
             text-decoration: none;
             color: black;
         }
 
-        footer #box ul li :hover {
+        footer ul li a:hover {
+            font-size: 30px;
             font-weight: bold;
-            color: black;
-        }
-        footer #box p {
-            float: left;
-            width: 700px;
-            height: 50px;
-            line-height: 150%;
-            margin: 5px 0 0 30px;
-            font-size: 18px;
-            color: black
+            color: darkgreen;
         }
 
-        footer #logo {
-            width: 200px;
+        footer p {
+            width: 100%;
             height: 50px;
-            margin: 30px 0 70px 170px;
+            text-align: center;
+            margin: 70px 0px 50px 0px;
+            font-size: 18px;
+            color: black
         }
     </style>
 </head>
@@ -233,70 +276,66 @@
             </ul>
         </div>
         <nav>
-            <ul>
-                <li>/</li>
-                <li><a href="#">About us</a></li>
-                <li>/</li>
-                <li><a href="#">The language of flowers</a></li>
-                <li>/</li>
-                <li><a href="#">Order</a></li>
-                <li>/</li>
-                <li><a href="#">Work</a></li>
-                <li>/</li>
-                <li><a href="#">Location</a></li>
-                <li>/</li>
-            </ul>
-            </nav>
+            <div class="menu-toggle">
+                <a href="#">About us</a>
+            </div>
+
+            <div class="menu-toggle">
+                <a href="#">Order</a>
+            </div>
+            <div class="menu-toggle">
+                <a href="#">The language of flowers</a>
+            </div>
+            <div class="menu-toggle">
+                <a href="#">Location</a>
+            </div>
+            </div>
+        </nav>
     </header>
     <div id="slider">
         <img src="img/storemain1.jpg" alt="슬라이더 이미지">
     </div>
     <section>
         <article>
-                    <h2>Monthly<br>Flower -<br>Tulip</h2>
-                    <button>월간 꽃 잡지 & 상품보러가기</button>
-                    
-                    <img src="img/redtulip.jpg"alt="빨강튤립"">
-                    <img src="img/pinktulip.jpg"alt="분홍튤립">
-                    <img src="img/orangetulip.jpg" alt="주황튤립">
-                    <img src="img/yellowtulip.jpg" alt="노란튤립">
-                    <img src="img/pupletulip.jpg" alt="보라튤립">
-                    <img src="img/whitetulip.jpg" alt="하얀튤립">
-                    <h3>about Tulip</h3>
-                    <p>튤립 꽃말은 색상에 따라 달라지며,<br>대표적으로<b>빨간색은 사랑의 고백, 보라색은 영원한 사랑,</b>
-                        하얀색은 실연·순결,<br> 분홍색은 애정·배려,<br> 노란색은 헛된 사랑으로 알려져 있습니다.
-                        튤립은 색상에 따라 의미가 달라지므로, 선물할 때는<br>
-                        상대방에게 전하고 싶은 메시지에 맞는 색상을 선택하는 것이 좋습니다. <br>
-                        빨간색은 고백, 보라색은 영원한 사랑,<br>
-                        하얀색은 사과·화해, 분홍색은 애정과 배려를 전할 때 적합합니다. <br>
-                        노란색은 희망과 긍정의 의미로도 많이 쓰입니다.
-                    </p>
-        </div>
+            <h2>Monthly<br>Flower -<br>Tulip</h2>
+            <div id="tuliptext">
+                <p>튤립 꽃말은 색상에 따라 달라지며,<br>대표적으로<b>빨간색은 사랑의 고백, 보라색은 영원한 사랑,</b>
+                    <br>하얀색은 실연·순결, 분홍색은 애정·배려,<br> 노란색은 헛된 사랑으로 알려져 있습니다.
+                    튤립은 색상에 따라 의미가 달라지므로,<br>
+                    선물할 때는상대방에게 전하고 싶은 메시지에 맞는 색상을 선택하는 것이 좋습니다. <br>
+                    빨간색은 고백, 보라색은 영원한 사랑,<br>
+                    하얀색은 사과·화해, 분홍색은 애정과 배려를 전할 때 적합합니다. <br>
+                    노란색은 희망과 긍정의 의미로도 많이 쓰입니다.
+                </p>
+            </div>
+            <div class="overlay-box"></div>
+            <div id="tulipimage">
+                <img src="img/redtulip.jpg" alt="빨강튤립"">
+                    <img src=" img/pinktulip.jpg"alt="분홍튤립">
+                <img src="img/pupletulip.jpg" alt="보라튤립">
+            </div>
+        </article>
     </section>
-<footer>
+    <footer>
         <div id="logo">
             <img src="img/logo-투명.png" alt="로고">
         </div>
-        <div id="box">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li>|</li>
-                <li><a href="#">BUSSINESS PRACTICE OFFICE</a></li>
-                <li>|</li>
-                <li><a href="#">COPYRIGHT</a></li>
-                <li>|</li>
-                <li><a href="#">CONTACT US</a></li>
-                <li>|</li>
-                <li><a href="#">SITEMAP</a></li>
-                <li>|</li>
-                <li><a href="#">개인정보 처리방침</a></li>
-                <li>|</li>
-                <li><a href="#">Chrysler</a></li>
-                <li>|</li>
-                <li><a href="#">FLAT</a></li>
-                <li>|</li>
-            </ul>
-            <P><b>ⓒ FLOWERGARDEN. All Rights Reserved.</b><br>
+        <ul class="footermenu">
+            <li><a href="#">HOME</a></li>
+            <li>|</li>
+            <li><a href="#">BUSSINESS</a></li>
+            <li>|</li>
+            <li><a href="#">COPYRIGHT</a></li>
+            <li>|</li>
+            <li><a href="#">SITEMAP</a></li>
+            <li>|</li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li>|</li>
+            <li><a href="#">Chrysler</a></li>
+            <li>|</li>
+            <li><a href="#">FLAT</a></li>
+        </ul>
+        <P><b>ⓒ FLOWERGARDEN. All Rights Reserved.</b>
             This homepage has an unsplash image,and this store is a virtual store.</p>
     </footer>
 </body>
